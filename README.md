@@ -1,5 +1,5 @@
 <h4 align="center"> 
-	🚧 Exemplo de Uso Simples do Puppeteer! 🚧
+	🚧 Exemplo de Uso Simples do Puppeteer... 🚧
 </h4>
 <h1 align="center">
     <img alt="Puppeteer" title="#Puppeteer" widht='100px'src="./assets/banner.png" />
