@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "node index.js",
+    "server": "npx live-server"
+  },
   "dependencies": {
     "puppeteer": "^5.2.1"
   }
