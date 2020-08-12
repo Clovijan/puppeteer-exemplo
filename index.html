@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .container {
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+     
+    }
+  </style>
+
+  <div class="container"></div>
+
+  <script>
+    (async() => {
+      //Abrir o arquivod e dados json
+      const response = await fetch('./repositorios.json');
+      const data = await response.json();
+
+      //formatando os dados para o html
+      const htmlList = data
+      .map( ({href}) => 
+      `<li>
+        <a href="${href}">{'${href}'}</a>
+      </li>`)
+      .join('');
+
+      //Colando no html
+      document.querySelector('.container').innerHTML = htmlList;
+    })();
+  </script>
+</body>
+</html>
